@@ -4,10 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
 </head>
 <body>
-    
+    <header>Rock Paper Scissor Game</header>
+    <main>
+        <div class="container">
+            <div class="row justify-content-start">
+              <div class="col-3">
+                <img id="choiceUser" src="img/paper.png" alt="">
+              </div>
+              <div class="col-1">
+                <div id="playerUser-score">USER</div>
+                <div id="user-score"></div>
+              </div>
+              <div class="col-4">
+                <div id="result">You win!
+                    <p>Scissor cut Paper.</p>
+                </div>
+              </div>
+              <div class="col-1">
+                <div id="playerComp-score">COMP</div>
+                <div id="comp-score"></div>
+              </div>
+              <div class="col-3">
+                <img id="choiceComp" src="img/rock.png" alt="">
+              </div>
+            </div>
+        <div class="score-board">
+            
+            
+            
+            <div class="choice">
+                <button onclick="playGame(1)" id="paper"><img  src="img/paper.png" alt=""></button>
+                <button onclick="playGame(3)" id="rock"><img src="img/rock.png" alt=""></button >
+                <button onclick="playGame(2)" id="scissor"><img  src="img/scissor.png" alt=""></button>
+            </div>
+            <footer>Make your move</footer>
+          
+
+
+
+
+        </div>
+        
+
+
+    </main>
+
+
+
+
+
+
+
     <script src="./main.js"></script>
 
 </body>

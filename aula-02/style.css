@@ -1,0 +1,139 @@
+body{
+    background-image: url(img/background.jpg);
+    color: white;
+}
+
+header{
+    background-color: blue;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    
+}
+
+main{
+    text-align: center;
+
+}
+
+.container{
+    padding: 0px;
+    margin: 20px 0px 20px;
+    
+}
+
+#choiceUser{
+    width: 100%;
+}
+
+#choiceComp{
+    width: 100%;
+}
+
+#playerUser-score{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+#playerComp-score{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+#user-score{
+    font-size:100px;
+    color: white;
+    width: 100%;
+    background-color: red;
+
+}
+
+
+#comp-score{
+    font-size: 100px;
+    color: white;
+    width: 100%;
+    background-color: red;
+
+}
+
+#result{
+    font-size:50px ;
+    color: white;
+}
+
+#result p{
+    font-size: 35px;
+}
+
+.choice{
+    height: 100px;
+
+
+}
+
+#paper img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 0px 10px;
+    background-color: blue;
+    border-radius: 40px;
+    transition: transform .2s;
+    
+}
+
+#rock img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 0px 10px;
+    background-color: blue;
+    border-radius: 40px;
+    transition: transform .2s;
+}
+
+#scissor img{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 0px 10px;
+    background-color: blue;
+    border-radius: 40px;
+    transition: transform .2s;
+}
+
+footer{
+    font-size: 50px;
+    color: red;
+   
+}
+
+#paper:hover{
+    transform: scale(1.5);
+}
+
+#rock:hover{
+    transform: scale(1.5);
+}
+
+#scissor:hover{
+    transform: scale(1.5);
+}
+
+button{
+    background-color: transparent;
+    background-repeat:no-repeat ;
+    border:none;
+    cursor:pointer;
+    overflow: hidden; 
+
+}
