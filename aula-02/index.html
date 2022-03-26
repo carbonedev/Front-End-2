@@ -22,7 +22,7 @@
                 <div id="user-score"></div>
               </div>
               <div class="col-4">
-                <div id="result">You win!
+                <div id="result">
                     <p>Scissor cut Paper.</p>
                 </div>
               </div>
@@ -39,11 +39,12 @@
             
             
             <div class="choice">
-                <button onclick="playGame(1)" id="paper"><img  src="img/paper.png" alt=""></button>
-                <button onclick="playGame(3)" id="rock"><img src="img/rock.png" alt=""></button >
-                <button onclick="playGame(2)" id="scissor"><img  src="img/scissor.png" alt=""></button>
+                <button onclick="paperChoice()" id="paper"><img  src="img/paper.png" alt=""></button>
+                <button onclick="stoneChoice()" id="rock"><img src="img/rock.png" alt=""></button >
+                <button onclick="scissorChoice()" id="scissor"><img  src="img/scissor.png" alt=""></button>
             </div>
-            <footer>Make your move</footer>
+            
+           
           
 
 
@@ -51,17 +52,19 @@
 
         </div>
         
-
+        <div class="play">
+          <button onclick="playGame()">PLAY</button>
+        </div>
 
     </main>
 
+    <footer>Make your move</footer>
 
 
 
 
 
-
-    <script src="./main.js"></script>
+    <script src="./main2.js"></script>
 
 </body>
 </html>

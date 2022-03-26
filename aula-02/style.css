@@ -114,6 +114,7 @@ main{
 footer{
     font-size: 50px;
     color: red;
+    text-align: center;
    
 }
 
@@ -136,4 +137,15 @@ button{
     cursor:pointer;
     overflow: hidden; 
 
+}
+
+.play button{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: blue;
+    border-radius: 15px;
+ 
+
+    
 }
