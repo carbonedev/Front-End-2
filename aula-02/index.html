@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row justify-content-start">
               <div class="col-3">
-                <img id="choiceUser" src="img/paper.png" alt="">
+                <p id="choiceUser"></p>
               </div>
               <div class="col-1">
                 <div id="playerUser-score">USER</div>
@@ -23,7 +23,7 @@
               </div>
               <div class="col-4">
                 <div id="result">
-                    <p>Scissor cut Paper.</p>
+                    
                 </div>
               </div>
               <div class="col-1">
@@ -31,7 +31,7 @@
                 <div id="comp-score"></div>
               </div>
               <div class="col-3">
-                <img id="choiceComp" src="img/rock.png" alt="">
+                <p id="choiceComp"></p>
               </div>
             </div>
         <div class="score-board">
@@ -39,9 +39,9 @@
             
             
             <div class="choice">
-                <button onclick="paperChoice()" id="paper"><img  src="img/paper.png" alt=""></button>
-                <button onclick="stoneChoice()" id="rock"><img src="img/rock.png" alt=""></button >
-                <button onclick="scissorChoice()" id="scissor"><img  src="img/scissor.png" alt=""></button>
+                <button id="paper"><img  src="img/paper.png" alt=""></button>
+                <button id="rock"><img src="img/rock.png" alt=""></button >
+                <button id="scissor"><img  src="img/scissor.png" alt=""></button>
             </div>
             
            
@@ -53,7 +53,7 @@
         </div>
         
         <div class="play">
-          <button onclick="playGame()">PLAY</button>
+          <button id="playGame">PLAY</button>
         </div>
 
     </main>
