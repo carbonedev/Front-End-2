@@ -1,28 +1,26 @@
-let nomeReference = document.querySelector('#nome')
-let passReference = document.querySelector('#pass')
-let telReference = document.querySelector('#tel')
-let buttonReference = document.querySelector('#button')
-let userName = ""
+let commentReference = document.querySelector('#comment')
+let submitReference = document.querySelector('#submit')
+let postsReference = document.querySelector('#posts')
+let newPost = ""
+let postsArray = []
 
 
+submitReference.addEventListener('click', function(event){
 
-
-buttonReference.addEventListener('keyup', function(event){
-    
-    userName = nomeReference
-    console.log(userName)
-    if (userName == "") {
-        buttonReference.removeAttribute("disabled");
-    }
-  });
-
-buttonReference.addEventListener('click', function(event){
     event.preventDefault()
+
+    newPost = commentReference.value
+
+    postsArray.push(newPost)
+
     
-    if(nomeReference.value !== ""){
+    localStorage.setItem('newPost',postsArray )
+
+    postsReference.innerHTML = (`<p>
     
-        buttonReference.removeAttribute('disabled')
+    ${localStorage.getItem('newPost')}
     
-    }
+    </p>`)
     
+
 })

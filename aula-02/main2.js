@@ -68,7 +68,7 @@ playGameReference.addEventListener('click', function(){
                 <p>Paper wraps Rock. You win! </p>
                 </div>`
                 
-                initScoreUser = (initScoreUser)+1
+                userScoreReference = initScoreUser +1
                 
                 
             }
@@ -80,7 +80,7 @@ playGameReference.addEventListener('click', function(){
                 <p>Scissors cut Paper. You lose! </p>
                 </div>`
                 
-                initScoreComp = (initScoreComp)+1  
+                compScoreReference = initScoreComp +1
                 
             }
                 else {
@@ -114,8 +114,7 @@ playGameReference.addEventListener('click', function(){
                     <p>Rock blunts Scissors. You win! </p>
                     </div>`
                     
-                    initScoreUser = (initScoreUser)+1
-                    
+                    userScoreReference = initScoreUser +1
                 }
                 
                 else {
@@ -126,7 +125,7 @@ playGameReference.addEventListener('click', function(){
                     <p>Paper wraps Rock. You lose! </p>
                     </div>`
                     
-                    initScoreComp = (initScoreComp)+1
+                    compScoreReference = initScoreComp +1
                     
                 }
                 break;             
@@ -151,7 +150,7 @@ playGameReference.addEventListener('click', function(){
                         <p>Scissors cut Paper. You win! </p>
                     </div>`
                     
-                    initScoreUser = (initScoreUser)+1
+                    userScoreReference = initScoreUser +1
                     
                 }
                 
@@ -163,7 +162,7 @@ playGameReference.addEventListener('click', function(){
                         <p>Rock blunts Scissors. You lose! </p>
                         </div>`
                         
-                        initScoreComp = (initScoreComp)+1
+                        compScoreReference = initScoreComp +1
                         
                         
                     }
@@ -175,8 +174,8 @@ playGameReference.addEventListener('click', function(){
     compScoreReference.innerHTML = `<div id="user-score">${initScoreComp}</div>`;
         
     
-        console.log(initScoreComp)
-        console.log(initScoreUser)
+        console.log(compScoreReference)
+        console.log(userScoreReference)
         
         
 
